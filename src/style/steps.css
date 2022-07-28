@@ -1,0 +1,16 @@
+.steps2{
+    height: 60px;
+    width:60px
+}
+.walked{
+    font-size: 13px;
+    margin: -5px;
+}
+.under{
+    font-size: 13px;
+    margin:-1px;
+}
+.steps{
+    display: flex;
+    flex-direction: row;
+}

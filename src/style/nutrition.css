@@ -1,0 +1,7 @@
+.nutrition{
+    display: flex;
+    flex-direction: row;
+}
+.nutrition div{
+    padding-left: 50px;
+}

@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+
+import User from './component/user';
+import dumbbell from './media/dumbbell.svg';
+import nutrition from './media/nutrition.svg';
+import walking from './media/walking.svg';
+import data from './data/data.json'
+
+
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='firstRow'>
+        <div className='columnWise'>
+          <img src={walking} className="image" alt="img"/>
+          <p>Steps</p>
+        </div>
+        <div className='columnWise'>
+          <img src={dumbbell} className="image2" alt="img"/>
+          <p>Workout</p>
+        </div>
+        <div className='columnWise'>
+          <img src={nutrition} className="image" alt="img"/>
+          <p>Nutrition</p>
+        </div>
+      </div>
+      {
+        data.users.map((user,index)=>{
+          return <User key={user.userId} userid={index}/>
+        })
+      }
     </div>
   );
 }
