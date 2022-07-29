@@ -1,9 +1,9 @@
 import React from "react";
 
-const Feedback = ()=>{
+const FeedbackWorkout = ()=>{
     return <div>
         <h1>Feedback</h1>
     </div>
 }
 
-export default Feedback;
+export default FeedbackWorkout;

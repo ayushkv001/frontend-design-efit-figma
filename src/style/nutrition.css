@@ -2,6 +2,39 @@
     display: flex;
     flex-direction: row;
 }
-.nutrition div{
+.pie-chart{
     padding-left: 50px;
+    margin-right: 15px;
+
+}
+
+.walked{
+    font-size: 13px;
+    margin: -5px;
+    text-align: center;
+}
+.under{
+    font-size: 13px;
+    margin:-1px;
+}
+
+.changer{
+    text-align: center;
+}
+
+.inChanger{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    width: 50px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+/* .inChanger p{
+
+} */
+.changer button{
+    margin-bottom: 3px;
 }

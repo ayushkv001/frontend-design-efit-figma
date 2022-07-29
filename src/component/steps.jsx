@@ -41,7 +41,7 @@ const Steps = ({userID})=>{
         </CircularProgressbarWithChildren></div>
         <div className="changer">
             <button onClick={increment}>+</button>
-            <div>
+            <div className="section">
                 <p className="walked">{change / 1000}k</p>
                 <p className="under">target</p>
             </div>

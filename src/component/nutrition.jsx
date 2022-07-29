@@ -37,7 +37,7 @@ const Nutrition = ({userID})=>{
     }
 
     return <div className="nutrition">
-        <div>
+        <div className="pie-chart">
             <PieChart 
             animate={true} 
             style={{width:"60px",height:"60px"}}
@@ -51,9 +51,9 @@ const Nutrition = ({userID})=>{
             <p>calorie</p>
         </div>
         
-<div className="changer">
+        <div className="changer">
             <button onClick={increment}>+</button>
-            <div>
+            <div className="inChanger">
                 <p className="walked">{change / 1000}k</p>
                 <p className="under">target</p>
             </div>

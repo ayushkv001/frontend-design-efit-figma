@@ -1,10 +1,12 @@
 .steps2{
     height: 60px;
-    width:60px
+    width:60px;
+    padding: 15px;
 }
 .walked{
     font-size: 13px;
     margin: -5px;
+    text-align: center;
 }
 .under{
     font-size: 13px;
@@ -13,4 +15,13 @@
 .steps{
     display: flex;
     flex-direction: row;
+}
+.changer{
+    text-align: center;
+}
+
+
+
+.section{
+    padding: 8px;
 }
