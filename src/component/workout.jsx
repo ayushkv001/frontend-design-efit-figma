@@ -21,21 +21,21 @@ const Workout = ({userID})=>{
     const deadLine = today.getDate() === secondDate.getDate() && today.getMonth() === secondDate.getMonth() && today.getFullYear() === secondDate.getFullYear();
 
     return <div className="workout">
-        <div className="calender">
+        <div className="calender" style={{fontSize:"12px"}}>
             <div>
-                <img src={manWithTick} />
-                <p>{`${firstDate.getUTCDate()} ${months[firstDate.getUTCMonth()]}`}</p>
+                <img src={manWithTick} style={{width:"30px",height:"30px"}}/>
+                <p style={{}}>{`${firstDate.getUTCDate()} ${months[firstDate.getUTCMonth()]}`}</p>
             </div>
             <div className={()=>{
                 if(deadLine)
                 return "deadLine"
                 return "normal"
             }}>
-                <img src={calender} />
+                <img src={calender} style={{width:"30px",height:"30px"}}/>
                 <p>{`${secondDate.getUTCDate()} ${months[secondDate.getUTCMonth()]}`}</p>
             </div>
         </div>
-        <Link to={`/${userID}/workout`}><img src={deadLine?alert:arrow}/></Link>
+        <Link to={`/${userID}/workout`}><img src={deadLine?alert:arrow} style={{paddingTop:"34px"}}/></Link>
     </div>
 }
 

@@ -15,6 +15,7 @@
 .steps{
     display: flex;
     flex-direction: row;
+    margin-left: 55px;
 }
 .changer{
     text-align: center;

@@ -17,7 +17,7 @@ import bell from '../media/bell.svg'
 const User =({userid}) =>{
     return <div className="User">
         <div className="image">
-        <img src={profile} alt="profile"/></div>
+        <img src={profile} alt="profile" style={{width:"100px",height:"100px",marginRight:"80px"}}/></div>
         <div className="user-email">
             <p className="userName">{data.users[userid].username}</p>
             <p className="emailName">{data.users[userid].email}</p>

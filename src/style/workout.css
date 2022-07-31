@@ -1,6 +1,7 @@
 .workout{
     display: flex;
     flex-direction: row;
+    margin-left: 80px;
 }
 .workout div{
     padding-left: 50px;

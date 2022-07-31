@@ -27,20 +27,20 @@ const Steps = ({userID})=>{
 
 
     return <div className="steps">
-        <div className="steps2">
+        <div className="steps2" style={{paddingTop:"30px"}}>
         <CircularProgressbarWithChildren
         value ={percent}
         styles={buildStyles({
             rotation:0.25,
-            pathColor:"lightgreen",
+            pathColor:"aqua",
             
         })}>
             <p className="walked">{walked}</p>
             <p className="under">walked</p>
 
         </CircularProgressbarWithChildren></div>
-        <div className="changer">
-            <button onClick={increment}>+</button>
+        <div className="changer" style={{paddingTop:"18px"}}>
+            <button onClick={increment} style={{marginBottom:"1px"}}>+</button>
             <div className="section">
                 <p className="walked">{change / 1000}k</p>
                 <p className="under">target</p>

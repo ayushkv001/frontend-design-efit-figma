@@ -37,7 +37,7 @@ const Nutrition = ({userID})=>{
     }
 
     return <div className="nutrition">
-        <div className="pie-chart">
+        <div className="pie-chart" style={{paddingTop:"30px"}}>
             <PieChart 
             animate={true} 
             style={{width:"60px",height:"60px"}}
@@ -45,21 +45,20 @@ const Nutrition = ({userID})=>{
             totalValue={1} 
             data={pie}
             lineWidth={25}
-            label={()=>calorieTaken}
-            labelStyle={{fontSize:"18px",fontWeight:"bold",lineHeight:"15px",fill:"white"}}
+            label={()=>calorieTaken+"cal."}
+            labelStyle={{fontSize:"17px",fontWeight:"bold",lineHeight:"15px",fill:"white"}}
             labelPosition={0}/>
-            <p>calorie</p>
         </div>
         
-        <div className="changer">
+        <div className="changer" style={{paddingTop:"18px"}}>
             <button onClick={increment}>+</button>
-            <div className="inChanger">
+            <div className="inChanger" >
                 <p className="walked">{change / 1000}k</p>
                 <p className="under">target</p>
             </div>
             <button onClick={decrement}>-</button>
         </div>
-        <Link to={`/${userID}/nutrition`}><img src={arrow}/></Link>
+        <Link to={`/${userID}/nutrition`}><img src={arrow} style={{paddingTop:"35px"}}/></Link>
     </div>
 }
 

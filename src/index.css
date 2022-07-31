@@ -6,8 +6,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
-  color: whitesmoke;
+  color:white;
+  /* background: linear-gradient(90deg,aquamarine,aqua); */
 }
+/* body::before{
+  content: '';
+  position: absolute;
+  inset:0;
+  background: linear-gradient(aqua,lightpink);
+  pointer-events: none;
+  mix-blend-mode: multiply;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

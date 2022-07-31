@@ -1,6 +1,7 @@
 .nutrition{
     display: flex;
     flex-direction: row;
+    margin-left: 85px;
 }
 .pie-chart{
     padding-left: 50px;
@@ -30,6 +31,8 @@
     width: 50px;
     padding-top: 3px;
     padding-bottom: 3px;
+    margin-top: 3px;
+    margin-bottom: 7px;
 
 }
 /* .inChanger p{
